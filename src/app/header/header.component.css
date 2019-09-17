@@ -1,0 +1,118 @@
+.header {
+  height: 50px;
+}
+
+.logo_wrapper {
+  background-color: white;
+  border-right: 1px solid grey;
+  height: 40px;
+  margin: 5px;
+  padding-right: 10px;
+  z-index: 1000000;
+}
+
+.subheader {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
+  text-decoration: none;
+  color: white;
+  padding-right: 15px;
+  user-select: none;
+  background-color: #2B3767;
+  min-height: 50px;
+  z-index: 150;
+}
+
+.submenu {
+  max-width: 205px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  transition: max-width 0.2s ease-out;
+  overflow-x: hidden;
+  color: white;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 5px;
+  border-radius: 5px;
+  background: linear-gradient(#394471, #242f58);
+  padding: 7px 0 7px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.submenu-min {
+  max-width: 40px;
+  transition: max-width 0.7s ease-out;
+}
+
+.subdivider {
+  border-right: 1px solid grey;
+}
+
+.header-animated {
+  animation-name: co-header-animate-definition;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  margin-left: 5px;
+  z-index: 1;
+  margin-top: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid rgba(255, 255, 255, 0.8);
+}
+
+.menu_button {
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-item {
+  font-size: 14px;
+  line-height: 40px;
+  padding: 0 15px 0 15px;
+  cursor: pointer;
+}
+
+  .menu-item:hover {
+    background-color: #e8e8e8;
+  }
+
+@keyframes co-header-animate-definition {
+  from {
+    margin-left: -250px;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 5px;
+    opacity: 1;
+  }
+}
+
+.actionHeader {
+  padding: 0 15px 0 10px;
+  line-height: 40px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.signin {
+  font-size: smaller;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.signup {
+  font-size: smaller;
+  margin-right: 20px;
+  cursor: pointer;
+}

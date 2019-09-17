@@ -1,0 +1,148 @@
+.nav-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  transition: width 0.2s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container-min {
+  transition: width 0.7s ease-out;
+  width: 57px !important;
+  overflow-x: hidden;
+}
+
+.nav-container-min-icon {
+  margin: auto -9px auto -8px;
+}
+
+.hidden_element {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+.nav-menu-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.nav-menu {
+  cursor: pointer;
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  min-width: 100px;
+}
+
+.nav-menu:hover {
+    /*background-color: rgba(0, 0, 0, 0.1);
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);*/
+    background-color: rgba(150, 150, 240, 0.10);
+}
+
+.nav-menu-xs {
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu-xs:hover {
+    background-color: transparent;
+}
+
+
+.nav-menu-nested {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu-nested:first-of-type {
+    box-shadow: inset 0 10px 20px -10px rgba(0,0,0,.4);
+}
+
+.nav-menu-caret {
+  background-color: transparent;
+  width: 5px!important;
+  height: 100%;
+}
+
+.nav-menu-caret-selected {
+  background-color: rgb(248, 167, 76);
+}
+
+.nav-menu-graphic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+  width: 50px;
+}
+
+.nav-menu-icon {
+  width: auto;
+  height: auto;
+  margin: 5px 11px 0 11px;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+.nav-menu-image {
+  max-width: 22px;
+  margin: 5px 11px 0 12px;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+.nav-menu-caption {
+  flex: 1;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.nav-menu-triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid;
+  background-color: transparent;
+  margin: 1px 0px -1px 0;
+}
+
+.nav-menu-triangle-hidden {
+  width: 4px;
+  height: 5px;
+}
+
+.nav-menu-chevron {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  transition-Duration: 0.8s;
+  transition-Timing-Function: ease-in-out;
+  transform: rotate(0deg);
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.nav-menu-submenu-tray {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  transition-Property: height;
+  transition-Duration: 0.5s;
+  transition-Timing-Function: ease-in-out;
+}
+

@@ -1,0 +1,9 @@
+<!-- Navigator -->
+<div #navcontainer class="nav-container {{isMinimized ? 'nav-container-min' : ''}}" (window:resize)="onResize($event)">
+  <twx-navitem [menuList]="menuList" [isResizable]="isResizable" [isMinimized]="isMinimized" [buttonHeight]="buttonHeight" (menuSelect)="onMenuSelect($event)"></twx-navitem>
+  <span style="flex: 1"></span>
+  <div *ngIf="showCollapse()" [style.height.px]="buttonHeight" class="nav-menu" ngClass.xs="hidden_element" (click)="onToggleNav()" style="padding-left: 20px; display: flex;">
+    <mat-icon class="nav-container-min-icon">{{isMinimized ? 'chevron_right' : 'chevron_left'}}</mat-icon>
+    <mat-icon class="nav-container-min-icon">{{isMinimized ? 'chevron_right' : 'chevron_left'}}</mat-icon>
+  </div>
+</div>

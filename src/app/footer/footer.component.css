@@ -1,0 +1,16 @@
+.ph-footer {
+  background-color: #1F253D;
+  color: rgba(255, 255, 255, 0.7);
+  height: 47px;
+  padding: 0 15px 0 15px;
+}
+
+.menu-item {
+  font-size: 14px;
+  line-height: 40px;
+  padding: 0 15px 0 10px;
+}
+
+  .menu-item:hover {
+    background-color: #e8e8e8;
+  }

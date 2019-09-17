@@ -1,0 +1,26 @@
+<div fxLayout="row" fxLayoutAlign="start center" class="ph-footer" style="height:40px;">
+  <!-- Footer Status Section -->
+  <div fxFlex>
+    {{this.status}}
+  </div>
+  <!-- Footer Lang Section -->
+  <div fxLayout="row" fxLayoutAlign="end center">
+    <div fxHide.lt-sm="true" fxLayoutAlign="end center">&copy; {{year}} {{this.config.company}}. All Rights Reserved.</div>
+    <div fxHide.lt-sm="true" *ngIf="version" style="border-right: 1px solid white;margin-right: 10px;padding-right: 10px;">&nbsp;</div>
+    <div fxHide.lt-sm="true" *ngIf="version">v{{this.version}}</div>
+    <div fxHide.lt-sm="true" *ngIf="flag" style="border-right: 1px solid white;margin-right: 10px;padding-right: 10px;">&nbsp;</div>
+    <div *ngIf="flag" style="cursor:pointer;" [matMenuTriggerFor]="lang_menu">
+      <span [class]="flag"></span>
+    </div>
+  </div>
+
+  <!-- Lang Menu -->
+  <mat-menu #lang_menu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item fxLayout="row" fxLayoutAlign="start center" *ngFor="let lang of this.config.langs" (click)="onLangSelect(lang)">
+      <span class="flag-icon flag-icon-{{lang.abbr}}" style="margin-right: 10px;"></span>
+      {{lang.name}}
+    </button>
+  </mat-menu>
+
+
+</div>

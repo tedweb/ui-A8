@@ -1,0 +1,13 @@
+<div class="nav-menu-container {{isNested ? 'nav-menu-nested' : ''}}" [title]="isMinimized ? item.caption : ''" *ngFor="let item of menuList">
+  <div #navitem class="nav-menu" [style.height.px]="buttonHeight" (click)="onClick(item)">
+    <div class="nav-menu-caret {{item.isSelected ? ' nav-menu-caret-selected' : ''}}"></div>
+    <div class="nav-menu-graphic" *ngIf="item.icon !== '' || item.image !== undefined">
+      <mat-icon *ngIf="item.image === undefined" class="nav-menu-icon">{{item.icon}}</mat-icon>
+      <img *ngIf="item.image !== indefined" class="nav-menu-image" src="{{item.image}}" />
+      <div class="{{item.items.length > 0 && isMinimized ? 'nav-menu-triangle-down' : 'nav-menu-triangle-hidden'}}"></div>
+    </div>
+    <div class="nav-menu-caption">{{item.caption}}&nbsp;&nbsp;{{item.notification}}</div>
+    <mat-icon *ngIf="!isMinimized" class="nav-menu-chevron" [style.transform]="item.transform">{{item.items.length > 0 ? 'keyboard_arrow_down' : ''}}</mat-icon>
+  </div>
+  <twx-navitem class="nav-menu-submenu-tray" [menuList]="item.items" [isNested]="true" [isMinimized]="isMinimized" [style.height.px]="item.containerHeight" [buttonHeight]="buttonHeight" (menuSelect)="onMenuSelect($event)"></twx-navitem>
+</div>

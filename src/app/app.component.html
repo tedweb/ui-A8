@@ -1,0 +1,10 @@
+<div fxLayout="column" fxFill fxLayoutAlign="center stretch" >
+  <twx-header class="header" [selectedApp]="this.selectedApp" [isMinimized]="this.menuIsCollapsed" [selectedPage]="this.displayPage" (signIn)="onSignIn()" (createAccount)="onCreateAccount()" (floatNavMenu)="onFloatNavMenuToggle()" (appSelect)="onAppSelect($event)" (homeSelect)="onPageSelect($event)" (actionSelect)="onActionSelect($event)"></twx-header>
+  <div fxLayout="row" fxFlex class="body">
+    <twx-navigator min-width="220px" class="nav_panel {{ menuIsCollapsed ? 'nav_panel_minimized' : 'nav_panel_maximized'}}" [buttonHeight]="44" ngClass.xs="nav_panel_xs {{displayFloatingNavMenu ? '' : 'hidden_element'}}" ngClass.gt-xs="nav_panel_gt-xs" [menu]="this.menu" [selectedMenu]="this.selectedApp.page" [isResizable]="this.selectedApp.menu.isResizable" [isMinimized]="this.selectedApp.menu.isMinimized" (menuSelect)="onMenuSelect($event)" (menuCollapsed)="onMenuResized(true)" (menuExpanded)="onMenuResized(false)"></twx-navigator>
+    <div class="content_wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <twx-footer *ngIf="this.config.user !== undefined" [version]="this.version" (langSelect)="onLangSelect($event)"></twx-footer>
+</div>

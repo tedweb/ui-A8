@@ -1,0 +1,352 @@
+{
+  "company": "TedWeb",
+  "company_logo": "../assets/img/logo-tedweb.png",
+  "tagline": "Personal Development Portal",
+  "app_id": "",
+  "api": "",
+  "langs": [
+    {
+      "id": "2",
+      "name": "English (US)",
+      "abbr": "us",
+      "icon": "flag-icon flag-icon-us"
+    },
+    {
+      "id": "3",
+      "name": "Español",
+      "abbr": "es",
+      "icon": "flag-icon flag-icon-es"
+    }
+  ],
+  "apps": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "path": "admin",
+      "description": "TedWeb Admin Portal",
+      "color_logo": "./assets/img/admin_color.png",
+      "white_logo": "./assets/img/admin_white.png",
+      "version": "1.0.0",
+      "menu": {
+        "autoShrinkMenusItems": true,
+        "lockSelectMenuItems": true,
+        "isResizable": true,
+        "isMinimized": false,
+        "items": [
+          {
+            "id": "1.1",
+            "caption": "General Settings",
+            "link": "settings",
+            "notification": "",
+            "icon": "group",
+            "items": []
+          },
+          {
+            "id": "1.2",
+            "caption": "Users",
+            "link": "users",
+            "notification": "",
+            "icon": "group",
+            "items": []
+          },
+          {
+            "id": "1.3",
+            "caption": "Apps",
+            "link": "apps",
+            "notification": "",
+            "icon": "settings",
+            "items": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "name": "Cloud Dev",
+      "path": "cloud-dev",
+      "description": "Personal development portal.",
+      "color_logo": "./assets/img/clouddev-color.png",
+      "white_logo": "./assets/img/clouddev-white.png",
+      "version": "2.0.1",
+      "menu": {
+        "autoShrinkMenusItems": true,
+        "lockSelectMenuItems": true,
+        "isResizable": true,
+        "isMinimized": false,
+        "items": [
+          {
+            "id": "1.0",
+            "caption": "AWS",
+            "link": "",
+            "notification": "",
+            "image": "./assets/img/aws_icon.png",
+            "items": [
+              {
+                "id": "1.1.0",
+                "caption": "Lambdas",
+                "link": "",
+                "notification": "",
+                "image": "./assets/img/aws_lambda.png",
+                "items": [
+                  {
+                    "id": "1.1.1",
+                    "caption": "Overview",
+                    "link": "lambdas/overview",
+                    "notification": "",
+                    "icon": "bookmark",
+                    "items": []
+                  },
+                  {
+                    "id": "1.1.2",
+                    "caption": "Blog Sample",
+                    "link": "lambdas/blog-sample",
+                    "notification": "",
+                    "image": "./assets/img/sample_icon.png",
+                    "items": []
+                  },
+                  {
+                    "id": "1.1.3",
+                    "caption": "Alexa Sample",
+                    "link": "alexa_sample",
+                    "notification": "",
+                    "image": "./assets/img/sample_icon.png",
+                    "items": []
+                  },
+                  {
+                    "id": "1.1.4",
+                    "caption": "Twilio Sample",
+                    "link": "twilio_sample",
+                    "notification": "",
+                    "image": "./assets/img/sample_icon.png",
+                    "items": []
+                  }
+                ]
+              },
+              {
+                "id": "1.2.0",
+                "caption": "DynamoDB",
+                "link": "",
+                "notification": "",
+                "image": "./assets/img/aws_dynamodb.png",
+                "items": [
+                  {
+                    "id": "1.2.1",
+                    "caption": "Overview",
+                    "link": "dynamodb/overview",
+                    "notification": "",
+                    "icon": "bookmark",
+                    "items": []
+                  },
+                  {
+                    "id": "1.2.2",
+                    "caption": "Sample",
+                    "link": "dynamodb/sample1",
+                    "notification": "",
+                    "image": "./assets/img/sample_icon.png",
+                    "items": []
+                  }
+                ]
+              },
+              {
+                "id": "1.3.0",
+                "caption": "Cloud Formation",
+                "link": "",
+                "notification": "",
+                "image": "./assets/img/aws_cloudformation.png",
+                "items": [
+                  {
+                    "id": "1.3.1",
+                    "caption": "Overview",
+                    "link": "cloudformation/overview",
+                    "notification": "",
+                    "icon": "bookmark",
+                    "items": []
+                  },
+                  {
+                    "id": "1.3.2",
+                    "caption": "Sample",
+                    "link": "cloudformation/sample1",
+                    "notification": "",
+                    "image": "./assets/img/sample_icon.png",
+                    "items": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "4.1",
+            "caption": "Campaigns",
+            "link": "campaigns",
+            "notification": "",
+            "icon": "group",
+            "items": []
+          },
+          {
+            "id": "4.2",
+            "caption": "Settings",
+            "link": "settings",
+            "notification": "",
+            "icon": "settings",
+            "items": []
+          },
+          {
+            "id": "4.3",
+            "caption": "Reports",
+            "link": "",
+            "notification": "",
+            "icon": "insert_chart",
+            "items": [
+              {
+                "id": "4.3.1",
+                "caption": "History",
+                "link": "history",
+                "notification": "",
+                "icon": "history",
+                "items": []
+              },
+              {
+                "id": "4.3.2",
+                "caption": "ROI",
+                "link": "roi",
+                "notification": "",
+                "icon": "monetization_on",
+                "items": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "name": "Family Stuff",
+      "path": "edh-admin",
+      "description": "Personal family management portal.",
+      "color_logo": "./assets/img/famstuff-color.png",
+      "white_logo": "./assets/img/famstuff-white.png",
+      "version": "1.01.10",
+      "menu": {
+        "autoShrinkMenusItems": true,
+        "lockSelectMenuItems": true,
+        "isResizable": true,
+        "isMinimized": false,
+        "items": [
+          {
+            "id": "1",
+            "caption": "Perform",
+            "link": "perform",
+            "notification": "",
+            "image": "./assets/img/edh-perform.png",
+            "items": []
+          },
+          {
+            "id": "2",
+            "caption": "Inform",
+            "link": "",
+            "notification": "",
+            "image": "./assets/img/edh-inform.png",
+            "items": [
+              {
+                "id": "2.1",
+                "caption": "Population",
+                "link": "population",
+                "notification": "",
+                "image": "./assets/img/edh-population.png",
+                "items": []
+              },
+              {
+                "id": "2.2",
+                "caption": "Condition Registry",
+                "link": "condition_registry",
+                "notification": "",
+                "image": "./assets/img/edh-condition_registry.png",
+                "items": []
+              },
+              {
+                "id": "2.3",
+                "caption": "Metrics",
+                "link": "metrics",
+                "notification": "",
+                "image": "./assets/img/edh-metrics.png",
+                "items": []
+              },
+              {
+                "id": "2.4",
+                "caption": "Gaps in Care",
+                "link": "gaps_in_care",
+                "notification": "",
+                "image": "./assets/img/edh-gaps_in_care.png",
+                "items": []
+              },
+              {
+                "id": "2.5",
+                "caption": "Patients Not Seen",
+                "link": "patients_not_seen",
+                "notification": "",
+                "image": "./assets/img/edh-patients_not_seen.png",
+                "items": []
+              }
+            ]
+          },
+          {
+            "id": "3",
+            "caption": "Navigate",
+            "link": "",
+            "notification": "",
+            "image": "./assets/img/edh-navigate.png",
+            "items": [
+              {
+                "id": "3.1",
+                "caption": "Transitions of Care",
+                "link": "transistions_of_care",
+                "notification": "",
+                "image": "./assets/img/edh-transitions_of_care.png",
+                "items": []
+              },
+              {
+                "id": "3.2",
+                "caption": "Pre-visit Planning",
+                "link": "previsit_planning",
+                "notification": "",
+                "image": "./assets/img/edh-pre_visit_planning.png",
+                "items": []
+              },
+              {
+                "id": "3.3",
+                "caption": "Risk Assessment",
+                "link": "risk_assessment",
+                "notification": "",
+                "image": "./assets/img/edh-risk_assessment.png",
+                "items": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "user": {
+    "id": "1",
+    "app_id":  "",
+    "name": "John Doe",
+    "lang": "us",
+    "actions": [
+      {
+        "id": "1",
+        "name": "Manage Profile",
+        "icon": "settings"
+      },
+      {
+        "id": "2",
+        "name": "Change Profile",
+        "icon": "settings"
+      },
+      {
+        "id": "3",
+        "name": "Logout",
+        "icon": "cancel"
+      }
+    ]
+  }
+}
