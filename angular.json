@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "twx-components": {
+    "tedweb": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -53,18 +53,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "twx-components:build"
+            "browserTarget": "tedweb:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "twx-components:build:production"
+              "browserTarget": "tedweb:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "twx-components:build"
+            "browserTarget": "tedweb:build"
           }
         },
         "test": {
@@ -101,7 +101,7 @@
         }
       }
     },
-    "twx-components-e2e": {
+    "tedweb-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -109,7 +109,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "twx-components:serve"
+            "devServerTarget": "tedweb:serve"
           }
         },
         "lint": {
@@ -204,5 +204,5 @@
       }
     }
   },
-  "defaultProject": "twx-components"
+  "defaultProject": "tedweb"
 }
