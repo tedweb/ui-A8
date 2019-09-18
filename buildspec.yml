@@ -3,17 +3,17 @@ environment_variables:
     plaintext:
         S3_BUCKET: "tedweb-a8-dev"
 phases:
-    install:
-        runtime-versions:
-            nodejs: 10
-        commands:
-            - echo Installing source NPM dependencies...
-            - npm install
-            - npm install -g @angular/cli
-    build:
-        commands:
-            - echo Build started on `date`
-            - ng build --prod
+    #install:
+    #     runtime-versions:
+    #         nodejs: 10
+    #     commands:
+    #         - echo Installing source NPM dependencies...
+    #         - npm install
+    #         - npm install -g @angular/cli
+    # build:
+    #     commands:
+    #         - echo Build started on `date`
+    #         - ng build --prod
     post_build:
         commands:
             #- aws s3 rm s3://${S3_BUCKET} --recursive
