@@ -17,7 +17,7 @@ phases:
     post_build:
         commands:
             #- aws s3 rm s3://${S3_BUCKET} --recursive
-            - aws s3 cp dist/tedweb/index.html s3://${S3_BUCKET}
+            - aws s3 cp src/index.html s3://${S3_BUCKET}
             #- aws s3 cp dist/tedweb/ s3://${S3_BUCKET} --recursive
             - echo Build completed #on `date`
 artifacts:
