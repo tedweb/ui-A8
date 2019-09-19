@@ -3,9 +3,9 @@ environment_variables:
     plaintext:
         S3_BUCKET: "tedweb-a8-dev"
 phases:
-    #install:
-    #     runtime-versions:
-    #         nodejs: 10
+    install:
+         runtime-versions:
+             nodejs: 10
     #     commands:
     #         - echo Installing source NPM dependencies...
     #         - npm install
@@ -15,8 +15,6 @@ phases:
     #         - echo Build started on `date`
     #         - ng build --prod
     post_build:
-        runtime-versions:
-            nodejs: 10
         commands:
             #- aws s3 rm s3://${S3_BUCKET} --recursive
             - aws s3 cp dist/tedweb/index.html s3://${S3_BUCKET}
